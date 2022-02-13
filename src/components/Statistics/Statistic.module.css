@@ -1,0 +1,23 @@
+.marks {
+  font-size: large;
+  font-weight: bold;
+}
+
+.marks:nth-child(2) {
+  color: green;
+}
+.marks:nth-child(3) {
+  color: orange;
+}
+
+.marks:nth-child(4) {
+  color: red;
+  margin-bottom: 20px;
+}
+
+.marks:nth-child(5),
+.marks:nth-child(6) {
+  font-size: larger;
+  font-weight: bolder;
+  text-shadow: -1px -1px 0 hsl(60, 1%, 72%), -2px -2px 1px hsl(80, 6%, 91%);
+}
