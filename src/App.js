@@ -30,6 +30,7 @@ class App extends Component {
   }
 
   render() {
+    const stateKeysArray = Object.keys(this.state);
     const { good, neutral, bad } = this.state;
     const total = this.countTotalFeedback();
     const positiveFeedbackPrecentage = this.countPositiveFeedbackPercentage();
@@ -37,7 +38,7 @@ class App extends Component {
       <>
         <Section title={'Please leave feedback'}>
           <FeedbackOptions
-            options={Object.keys(this.state)}
+            options={stateKeysArray}
             onLeaveFeedback={this.addFeedback}
           />
         </Section>
